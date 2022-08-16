@@ -5,16 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="viw"> -->
     <title>Macre Calefacción</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
@@ -44,7 +42,7 @@
             <img src="./img/calefaccion-hero.png" class="hero__img" alt="calefaccion-central">
         </div>
 
-        <div class="hero__container">
+        <div class="hero__container" data-aos="fade-right" data-aos-duration="1800">
 
             <div class="hero__headline">
                 <h1>Lorem ipsum dolor sit <span>amet</span> consectetur</h1>
@@ -79,8 +77,16 @@
 
     <main>
 
+
+
+        <!-- WhatsApp Floating Button -->
+        <div class="floating-button"> <a
+            href="https://api.whatsapp.com/send?phone=+5491162471985&text=Hola, quisiera recibir más información sobre los servicios de Macre"
+            target="_blank"> <i class="bi bi-whatsapp"></i> </a>
+        </div>
+
         <!-- Main Section LEFT-->
-        <section class="main-section-left">
+        <section class="main-section-left" data-aos="fade-up" data-aos-duration="3000">
 
             <div>
                 <h4 class="main-section-left__title">Nuestros Valores</h4>
@@ -121,7 +127,7 @@
                     </article>
                 </div>
 
-                <button class="button__ghost"> <a href="./pages/quienes-somos.html"> Conocenos </a> </button>
+                <button class="button__ghost"> <a href="./pages/quienes-somos.html"> Conocenos </a> <i class="bi bi-chevron-right"></i> </button>
 
             </div>
 
@@ -129,18 +135,18 @@
 
 
         <!-- Hightlight Section -->
-        <section class="highlight-section">
+        <section class="highlight-section" data-aos="fade-up" data-aos-duration="3000">
 
             <h3 class="highlight-section__title">Nuestros Proyectos</h3>
 
             <div class="highlight-section__group--left">
 
-                <div class="highlight-section__card--left">
+                <div class="highlight-section__card--left" data-aos="zoom-in" data-aos-duration="600">
                     <h5 class="highlight-card__title">Proyecto 1</h5>
                     <p class="highlight-card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 
                     <!-- Este link redirigirá a un article dentro de la página Proyectos cuando esté hecha la misma -->
-                    <button class="button__ghost"> <a href="./pages/proyectos.html"> Ver Proyecto </a> </button>
+                    <button class="button__ghost"> <a href="./pages/proyectos.html"> Ver Proyecto </a> <i class="bi bi-chevron-right"></i> </button>
                 </div>
 
                 <img class="highlight-section__img" src="./img/proyecto-1.png" alt="piso-radiante">
@@ -150,12 +156,12 @@
 
             <div class="highlight-section__group--right">
 
-                <div class="highlight-section__card--right">
+                <div class="highlight-section__card--right" data-aos="zoom-in" data-aos-duration="600">
                     <h5 class="highlight-card__title">Proyecto 2</h5>
                     <p class="highlight-card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 
                     <!-- Este link redirigirá a un article dentro de la página Proyectos cuando esté hecha la misma -->
-                    <button class="button__ghost"> <a href="./pages/proyectos.html"> Ver Proyecto </a> </button>
+                    <button class="button__ghost"> <a href="./pages/proyectos.html"> Ver Proyecto </a> <i class="bi bi-chevron-right"></i> </button>
                 </div>
 
                 <img class="highlight-section__img" src="./img/proyecto-2.png" alt="pileta-climatizada">
@@ -165,12 +171,12 @@
 
             <div class="highlight-section__group--left">
 
-                <div class="highlight-section__card--left">
+                <div class="highlight-section__card--left" data-aos="zoom-in" data-aos-duration="600">
                     <h5 class="highlight-card__title">Proyecto 3</h5>
                     <p class="highlight-card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 
                     <!-- Este link redirigirá a un article dentro de la página Proyectos cuando esté hecha la misma -->
-                    <button class="button__ghost"> <a href="./pages/proyectos.html"> Ver Proyecto </a> </button>
+                    <button class="button__ghost"> <a href="./pages/proyectos.html"> Ver Proyecto </a> <i class="bi bi-chevron-right"></i> </button>
                 </div>
 
                 <img class="highlight-section__img" src="./img/proyecto-3.png" alt="piso-radiante-madera">
@@ -184,7 +190,7 @@
 
 
         <!-- Main Section RIGHT-->
-        <section class="main-section-right">
+        <section class="main-section-right" data-aos="fade-up" data-aos-duration="3000">
 
             <div>
                 <h4 class="main-section-right__title">Nuestros Servicios</h4>
@@ -239,14 +245,14 @@
 
                 </div>
 
-                <button class="button__ghost"> <a href="./pages/servicios.html"> Conocé más </a> </button>
+                <button class="button__ghost"> <a href="./pages/servicios.html"> Conocé más </a> <i class="bi bi-chevron-right"></i> </button>
             </div>
 
         </section>
 
 
 
-        <section class="main-section-how">
+        <section class="main-section-how" data-aos="fade-up" data-aos-duration="3000">
 
             <div>
                 <h3 class="section-how__title">¿Cómo lo hacemos?</h3>
@@ -254,19 +260,19 @@
 
             <div class="section-how">
 
-                <article class="section-how__card">
+                <article class="section-how__card" data-aos="zoom-in" data-aos-duration="800">
                     <img src="./img/icono-casa.png" alt="icono-casa">
                     <h5>Te contactamos</h5>
                     <p>Lorem ipsum dolor sit amet consectetur</p>
                 </article>
 
-                <article class="section-how__card">
+                <article class="section-how__card" data-aos="zoom-in" data-aos-duration="800">
                     <img src="./img/icono-idea.png" alt="icono-idea">
                     <h5>Proyectamos</h5>
                     <p>Lorem ipsum dolor sit amet consectetur</p>
                 </article>
 
-                <article class="section-how__card">
+                <article class="section-how__card" data-aos="zoom-in" data-aos-duration="800">
                     <img src="./img/icono-herramientas.png" alt="icono-herramientas">
                     <h5>Nos encargamos</h5>
                     <p>Lorem ipsum dolor sit amet consectetur</p>
@@ -279,107 +285,118 @@
 
 
 
-    <footer>
+    <footer data-aos="fade-up">
 
-        <div class="footer-section">
+        <div class="footer">
 
-            <section class="footer-row-container">
-                <h1 class="logo">Macre</h1>
+            <div class="footer-section">
 
-                <div class="icons-container">
-                    <div class="icon-button"> <a href="https://www.facebook.com/macrecalefaccion/" target="_blank"> <i
-                                class="bi bi-facebook"></i> </a> </div>
-                    <div class="icon-button"> <a href="https://www.instagram.com/macrecalefaccion/" target="_blank"> <i
-                                class="bi bi-instagram"></i> </a> </div>
-                    <div class="icon-button"> <a
-                            href="https://api.whatsapp.com/send?phone=+5491162471985&text=Hola, quisiera recibir más información sobre los servicios de Macre"
-                            target="_blank"> <i class="bi bi-whatsapp"></i> </a> </div>
-                </div>
-            </section>
+                <section class="footer-row-container">
+                    <h1 class="logo">Macre</h1>
 
-            <section class="footer-row-container">
-                <h5 class="footer-title">Mapa del Sitio</h5>
+                    <div class="icons-container">
+                        <div class="icon-button"> <a href="https://www.facebook.com/macrecalefaccion/" target="_blank"> <i
+                                    class="bi bi-facebook"></i> </a> </div>
+                        <div class="icon-button"> <a href="https://www.instagram.com/macrecalefaccion/" target="_blank"> <i
+                                    class="bi bi-instagram"></i> </a> </div>
+                        <div class="icon-button"> <a
+                                href="https://api.whatsapp.com/send?phone=+5491162471985&text=Hola, quisiera recibir más información sobre los servicios de Macre"
+                                target="_blank"> <i class="bi bi-whatsapp"></i> </a> </div>
+                    </div>
+                </section>
 
-                <ul class="footer-row-container__list">
-                    <li> <a href="./index.html">Inicio</a> </li>
-                    <li> <a href="./pages/quienes-somos.html">Quienes somos</a></li>
-                    <li> <a href="./pages/servicios.html">Servicios</a> </li>
-                    <li> <a href="./pages/productos.html">Productos</a> </li>
-                    <li> <a href="./pages/proyectos.html">Proyectos</a> </li>
-                    <li> <a href="./pages/contacto.html">Contacto</a> </li>
-                </ul>
-            </section>
+                <section class="footer-row-container">
+                    <h5 class="footer-title">Mapa del Sitio</h5>
 
+                    <ul class="footer-row-container__list">
+                        <li> <a href="./index.html">Inicio</a> </li>
+                        <li> <a href="./pages/quienes-somos.html">Quienes somos</a></li>
+                        <li> <a href="./pages/servicios.html">Servicios</a> </li>
+                        <li> <a href="./pages/productos.html">Productos</a> </li>
+                        <li> <a href="./pages/proyectos.html">Proyectos</a> </li>
+                        <li> <a href="./pages/contacto.html">Contacto</a> </li>
+                    </ul>
+                </section>
+
+            </div>
+
+
+            <div class="footer-section">
+
+                <section class="footer-row-container">
+                    <h5 class="footer-title">Contacto GBA</h5>
+
+                    <div class="footer-row-container">
+                        <div>
+                            <a href="https://api.whatsapp.com/send?phone=+5491162471985&text=Hola, quisiera recibir más información sobre los servicios de Macre"
+                                target="_blank" class="icon-row">
+                                <i class="bi bi-telephone"></i>
+                                <p>11-6247-1985</p>
+                            </a>
+                        </div>
+
+                        <div class="icon-row">
+                            <a href="./pages/contacto.html" target="_blank" class="icon-row">
+                                <i class="bi bi-envelope"></i>
+                                <p>nombre@dominio.com</p>
+                            </a>
+                        </div>
+
+                        <div class="icon-row">
+                            <i class="bi bi-geo-alt"></i>
+                            <p>Martínez, GBA Norte</p>
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <section class="footer-row-container">
+
+                    <h5 class="footer-title">Contacto Pinamar</h5>
+
+                    <div class="footer-row-container">
+                        <div>
+                            <a href="https://api.whatsapp.com/send?phone=+5491162471985&text=Hola, quisiera recibir más información sobre los servicios de Macre"
+                                target="_blank" class="icon-row">
+                                <i class="bi bi-telephone"></i>
+                                <p>11-6247-1985</p>
+                            </a>
+                        </div>
+
+                        <div class="icon-row">
+                            <a href="./pages/contacto.html" target="_blank" class="icon-row">
+                                <i class="bi bi-envelope"></i>
+                                <p>nombre@dominio.com</p>
+                            </a>
+                        </div>
+
+                        <div class="icon-row">
+                            <i class="bi bi-geo-alt"></i>
+                            <p>Valeria del Mar, Pinamar</p>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+            
         </div>
 
-
-        <div class="footer-section">
-
-            <section class="footer-row-container">
-                <h5 class="footer-title">Contacto GBA</h5>
-
-                <div class="footer-row-container">
-                    <div>
-                        <a href="https://api.whatsapp.com/send?phone=+5491162471985&text=Hola, quisiera recibir más información sobre los servicios de Macre"
-                            target="_blank" class="icon-row">
-                            <i class="bi bi-telephone"></i>
-                            <p>11-6247-1985</p>
-                        </a>
-                    </div>
-
-                    <div class="icon-row">
-                        <a href="./pages/contacto.html" target="_blank" class="icon-row">
-                            <i class="bi bi-envelope"></i>
-                            <p>nombre@dominio.com</p>
-                        </a>
-                    </div>
-
-                    <div class="icon-row">
-                        <i class="bi bi-geo-alt"></i>
-                        <p>Martínez, GBA Norte</p>
-                    </div>
-                </div>
-
-            </section>
-
-
-            <section class="footer-row-container">
-
-                <h5 class="footer-title">Contacto Pinamar</h5>
-
-                <div class="footer-row-container">
-                    <div>
-                        <a href="https://api.whatsapp.com/send?phone=+5491162471985&text=Hola, quisiera recibir más información sobre los servicios de Macre"
-                            target="_blank" class="icon-row">
-                            <i class="bi bi-telephone"></i>
-                            <p>11-6247-1985</p>
-                        </a>
-                    </div>
-
-                    <div class="icon-row">
-                        <a href="./pages/contacto.html" target="_blank" class="icon-row">
-                            <i class="bi bi-envelope"></i>
-                            <p>nombre@dominio.com</p>
-                        </a>
-                    </div>
-
-                    <div class="icon-row">
-                        <i class="bi bi-geo-alt"></i>
-                        <p>Valeria del Mar, Pinamar</p>
-                    </div>
-                </div>
-
-            </section>
-
+        <div class="footer-legals">
+            <p class="footer-legals__text">Todos los derechos reservados @ MACRE, 2022</p>
         </div>
 
     </footer>
 
 
 
-    <div class="footer-legals">
-        <p class="footer-legals__text">Todos los derechos reservados @ MACRE, 2022</p>
-    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
 
 </body>
 

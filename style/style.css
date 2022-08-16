@@ -8,9 +8,9 @@
 
 main {
     display: grid;
-    gap: 104px;
-    margin-top: 144px;
-    margin-bottom: 144px;
+    gap: 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 
     grid-template-areas: 
     "valores"
@@ -34,7 +34,7 @@ a :visited {
 .logo {
     font-family: 'Bebas Neue';
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 2.2rem;
     letter-spacing: 0.1em;
     color: #151515;
 }
@@ -92,10 +92,15 @@ p {
     font-size: 1.25rem;
     color: #F1F1F1;
     letter-spacing: 0.02em;
+
+    transition-duration: 300ms;
+    transition-timing-function: ease;
 }
 
-.button__primary a:visited {
-    color: #F1F1F1;
+.button__primary:hover {
+    background-color: #00A9FF;
+    box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+    transform: translateY(-4px);
 }
 
 .button__secondary {
@@ -119,34 +124,49 @@ p {
     font-size: 1.25rem;
     color: #3827FF;
     letter-spacing: 0.01em;
+
+    transition-duration: 300ms;
+    transition-timing-function: ease;
 }
 
-.button__secondary a:visited {
-    color: #3827FF;
+.button__secondary:hover {
+    color: #00A9FF;
+    border: 3px solid #00A9FF;
+    box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+    transform: translateY(-4px);
 }
 
 .button__ghost {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4px;
 
     height: 48px;
     border-radius: 4px;
     border: none;
     background-color: #F1F1F100;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 11px 24px 11px 0px;
-
+    padding: 11px 0px 11px 0px;
+    
     font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
     font-size: 1.25rem;
     color: #3827FF;
     letter-spacing: 0.01em;
+    
+    transition-duration: 200ms;
+    transition-timing-function: ease;
 }
 
-.button__ghost a:visited {
-    color: #3827FF;
+.button__ghost i{
+    padding-top: 4px;
+}
+
+.button__ghost:hover {
+    color: #00A9FF;
+    transform: translate(-2px);
+    transform: scale(1.03);
 }
 
 .icon-button {
@@ -163,6 +183,27 @@ p {
     color: #F1F1F1;
     font-size: 1.125rem;
     padding: 3px;
+}
+
+.floating-button{
+    position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-image: linear-gradient(0deg, #20B038 0%, #60D66A 100%);
+	color:#F1F1F1;
+	border-radius:50px;
+    display: flex;
+	text-align:center;
+    justify-content: center;
+    align-items: center;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 6px 12px 4px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index:100;
+}
+
+.floating-button i{
+    font-size: 2rem;
 }
 
 
@@ -318,9 +359,33 @@ header nav ul {
 nav ul li {
     font-family: 'Jost';
     font-weight: 400;
-    font-size: 0.75rem;
+    font-size: 1rem;
     justify-content: space-around;
+    position: relative;
+    transition: ease-in-out 250ms;
 }
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: #3827FF;
+    bottom: -6px;
+    transition: ease-in-out 250ms;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.selected-item a::after {
+    height: 4px;
+    width: 100%;
+}
+
+
 
 @media (min-width: 1024px) {
 
@@ -329,6 +394,10 @@ nav ul li {
         padding: 16px 32px;
     }
 
+    nav ul li a {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
 }
 
 
@@ -340,6 +409,7 @@ nav ul li {
     gap: 40px;
     justify-content: center;
     align-items: flex-start;
+    margin-right: 16px;
     grid-area: valores;
 }
 
@@ -365,11 +435,13 @@ nav ul li {
         gap: 40px;
         justify-content: flex-start;
         align-items: center;
+        margin-right: 32px;
     }
 
     .main-section-left__img {
         width: 40vw;
     }
+
 }
 
 
@@ -381,6 +453,7 @@ nav ul li {
     gap: 40px;
     justify-content: center;
     align-items: flex-end;
+    margin-left: 16px;
     grid-area: servicios;
 }
 
@@ -403,6 +476,7 @@ nav ul li {
         gap: 40px;
         justify-content: flex-end;
         align-items: center;
+        margin-left: 32px;
     }
 
     .main-section-right__img {
@@ -418,11 +492,10 @@ nav ul li {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-left: 16px;
     margin-right: 16px;
 }
-
 
 .main-section__articles__group {
     display: flex;
@@ -431,7 +504,7 @@ nav ul li {
 }
 
 .main-section__highglighted_text {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 
 @media (min-width: 1024px) {
@@ -469,11 +542,15 @@ nav ul li {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
     row-gap: 32px;
+    margin-top: 80px;
+    margin-left: 32px;
+    margin-right: 32px;
 }
 
 .servicios__title {
     color: #3827FF;
 }
+
 
 
 /*Highlight-Section*/
@@ -611,6 +688,11 @@ nav ul li {
 }
 
 @media (min-width: 1024px) {
+    .main-section-how{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
     .section-how {
         display: flex;
         flex-direction: row;
@@ -625,8 +707,8 @@ i {
     font-size: 1.125rem;
 }
 
-footer,
-footer p {
+.footer,
+.footer p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -639,14 +721,14 @@ footer p {
     row-gap: 40px;
 }
 
-footer {
+.footer {
     padding: 32px 16px 32px 16px;
     background-color: #E6E6E6;
     column-gap: 40px;
 }
 
 
-footer ul li {
+.footer ul li {
     height: 24px;
 }
 
@@ -718,12 +800,12 @@ footer ul li {
 
 @media (min-width: 1024px) {
 
-    footer {
+    .footer {
         padding: 24px 32px 24px 32px;
     }
 
-    footer,
-    footer p {
+    .footer,
+    .footer p {
         flex-direction: row;
     }
 
@@ -770,6 +852,17 @@ footer ul li {
     font-weight: 500;
 }
 
+
+.productos .card{
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+.productos .card:hover{
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+    transform: translateY(-2);
+    transform: scale(1.05);
+}
 
 
 /*Contacto*/
@@ -828,6 +921,7 @@ footer ul li {
 
     .contacto-main {
         margin-left: 104px;
+        margin-top: 80px;
     }
 
     .contacto__form__input {
@@ -841,4 +935,11 @@ footer ul li {
         display: block;
         height: auto;
     }   
+}
+
+/* Proyectos */
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
 }
