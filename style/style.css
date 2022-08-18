@@ -526,14 +526,13 @@ nav ul li a:hover::after {
 
 
 /*Card-Servicios*/
-.card {
+.servicios-card {
     display: flex;
     flex-direction: column;
     background: #F1F1F1;
     align-items: flex-start;
     gap: 8px;
     padding: 24px;
-    box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1);
     border-radius: 8px
 }
 
@@ -830,13 +829,24 @@ i {
 
 
 /*Cards-Productos*/
-.productos {
+.productos-area {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     column-gap: 20px;
     row-gap: 32px;
+}
+
+.productos-card {
+    display: flex;
+    flex-direction: column;
+    background: #F1F1F1;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 24px;
+    box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+    border-radius: 8px
 }
 
 .productos__card__desc {
@@ -852,13 +862,12 @@ i {
     font-weight: 500;
 }
 
-
-.productos .card{
+.productos-card{
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
 }
 
-.productos .card:hover{
+.productos-card:hover{
     box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
     transform: translateY(-2);
     transform: scale(1.05);
