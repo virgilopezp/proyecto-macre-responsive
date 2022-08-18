@@ -176,7 +176,7 @@ p {
     margin-bottom: 0px;
 }
 
-.highlighted_text{
+.highlighted_tex{
     display: flex;
     align-items: center;
     font-size: 1.2rem;
@@ -185,7 +185,7 @@ p {
 
 
 @media (min-width: 992px) {
-    .highlighted_text {
+    .highlighted_tex {
         padding-top: 0px;
     }
 }
