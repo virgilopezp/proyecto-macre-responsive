@@ -176,10 +176,18 @@ p {
     margin-bottom: 0px;
 }
 
-.highglighted_text{
+.highlighted_text{
     display: flex;
     align-items: center;
     font-size: 1.2rem;
+    padding-top: 40px;
+}
+
+
+@media (min-width: 992px) {
+    .highlighted_text {
+        padding-top: 0px;
+    }
 }
 
 /*Buttons*/
