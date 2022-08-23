@@ -1,0 +1,186 @@
+.button__primary {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+
+    height: 48px;
+    border-radius: 4px;
+    background-color: $blue;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    margin: 8px;
+    box-shadow: $shadow-0;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: $white;
+    letter-spacing: 0.02em;
+
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+.button__primary a:visited {
+    color: $white;
+}
+
+.button__primary a:hover {
+    color: $white;
+}
+
+.button__primary:hover {
+    background-color: $light-blue;
+    box-shadow: $shadow-2;
+    transform: translateY(-4px);
+}
+
+
+
+.button__secondary {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 48px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 2px solid $blue;
+    background-color: $white;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    margin: 8px;
+    box-shadow: $shadow-0;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: $blue;
+    letter-spacing: 0.01em;
+
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+.button__secondary a{
+    transition-timing-function: ease-in-out;
+}
+
+.button__secondary a:hover {
+    color: $light-blue;
+}
+
+.button__secondary:hover {
+    color: $light-blue;
+    border: 3px solid $light-blue;
+    box-shadow: $shadow-2;
+    transform: translateY(-4px);
+}
+
+
+
+.button__ghost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:4px;
+
+    height: 48px;
+    border-radius: 4px;
+    border: none;
+    background-color: #F1F1F100;
+    padding: 11px 0px 11px 0px;
+    
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: $blue;
+    letter-spacing: 0.01em;
+    
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+}
+
+.button__ghost i{
+    padding-top: 6px;
+    transition-timing-function: ease-in-out;
+}
+
+.button__ghost a{
+    transition-timing-function: ease-in-out;
+}
+
+.button__ghost a:hover {
+    color: $light-blue;
+}
+
+.button__ghost:hover {
+    color: $light-blue;
+    transform: translate(-2px);
+    transform: scale(1.03);
+}
+
+.button__ghost i:hover{
+    transform: translate(-2px);
+    transform: scale(1.03);
+}
+
+
+
+.icon-button {
+    background-color: $blue;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-button i {
+    color: #F1F1F1;
+    font-size: 1.125rem;
+    padding: 3px;
+}
+
+
+
+.floating-button{
+    position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-image: linear-gradient(0deg, #20B038 0%, #60D66A 100%);
+	color:#F1F1F1;
+	border-radius:50px;
+    display: flex;
+	text-align:center;
+    justify-content: center;
+    align-items: center;
+	box-shadow: $shadow-1;
+    z-index:100;
+
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+.floating-button i{
+    font-size: 2rem;
+    position: relative;
+    bottom: 0.05em;
+}
+
+.floating-button a:hover{
+    color: #F1F1F1;
+}
+
+.floating-button:hover{
+    box-shadow: $shadow-2;
+    transform: translateY(-4px);
+}

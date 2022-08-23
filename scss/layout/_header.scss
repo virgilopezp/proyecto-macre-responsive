@@ -1,0 +1,55 @@
+/*Nav Bar*/
+header {
+    align-items: center;
+    width: 100%;
+    padding: 0px 16px 0px 16px;
+    h1 {
+        text-align: end;
+        margin-left: 32px;
+        margin-bottom: 0px;
+    }
+}
+
+.navbar {
+    background-color: #F1F1F1;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav ul li {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 1rem;
+    justify-content: space-around;
+    position: relative;
+    transition: ease-in-out 250ms;
+}
+
+header nav ul li a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: #3827FF;
+    bottom: -6px;
+    transition: ease-in-out 250ms;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+.selected-item a::after {
+    height: 4px;
+    width: 100%;
+}
+
+.nav-link{
+    display: flex;
+    justify-content: center;
+}

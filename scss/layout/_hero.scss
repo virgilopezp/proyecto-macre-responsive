@@ -1,0 +1,85 @@
+.hero {
+    justify-content: center;
+    padding-top: 40px;
+    &__container {
+        gap: 24px;
+    }
+
+    &__container h2{
+        margin-top: 24px;
+        margin-bottom: 24px;
+        @media (min-width:992px) {
+            margin-top: 8px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__img {
+        object-fit: cover;
+        position: relative;
+        height: 80vh;
+        width: 100%;
+        border-radius: 24px 0px 0px 24px;
+        z-index: 1;
+    }
+
+    &__headline {
+        background-image: url("../img/calefaccion-hero_background.png");
+        background-size: cover;
+        height: 352px;
+    }
+
+    &__headline h1 {
+        width: 245px;
+        padding-left: 16px;
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.625rem;
+        line-height: 120%;
+        color: #F1F1F1;
+        padding-top: 100px;
+    }
+
+    &__subheadline {
+        padding: 0px 16px 0px 16px;
+    }
+
+    &__subheadline h2 {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 120%;
+        color: #151515;
+    }
+    
+}
+
+
+table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    tr th {
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.625rem;
+        padding: 8px 8px 4px 8px;
+        text-align: center;
+    }
+
+    tr td {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        padding: 4px 8px 8px 8px;
+        text-align: center;
+    }
+}
