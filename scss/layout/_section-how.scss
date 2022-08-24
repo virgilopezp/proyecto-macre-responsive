@@ -1,0 +1,32 @@
+// Section-How
+.section-how {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        padding: 8px;
+        margin: 24px;
+        color: $blue;
+        text-align: center;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    @media (min-width: 992px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

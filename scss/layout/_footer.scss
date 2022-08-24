@@ -1,0 +1,119 @@
+// Footer
+footer {
+    width: 100%;
+}
+
+.footer {
+    background-color: $soft-grey;
+    column-gap: 40px;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: $blue;
+        background-color: $soft-grey;
+        padding: 32px 16px 32px 16px;
+        @media (min-width: 992px) {
+            flex-direction: row;
+        }
+    }
+
+    &__container p {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        row-gap: 40px;
+    }
+    &__container ul li {
+        height: 24px;
+    }
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    @media (min-width: 992px) {
+        flex-direction: row;
+        gap: 48px;
+    }
+}
+
+.footer-title {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    color: #1F1F1F;
+    margin: 4px 4px 4px 0px;
+}
+
+.icons-container {
+    display: flex;
+    max-width: 120px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-row {
+    display: flex;
+    gap: 8px;
+    height: 24px;
+    align-items: center;
+}
+
+.footer-row-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-left: 0px;
+        font-family: $main-font;
+        font-size: 14px;
+    }
+}
+
+.footer-legals {
+    background-color: $blue;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 16px;
+    padding-left: 16px;
+    @media (min-width: 992px) {
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+}
+
+.footer-legals__text,
+.footer-legals p {
+    background-color: $blue;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.625rem;
+    letter-spacing: 0.03em;
+    color: $white;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.footer-legals__text{
+    @media (min-width: 992px) {
+        font-size: 0.75rem;
+        text-align: right;
+    }
+}

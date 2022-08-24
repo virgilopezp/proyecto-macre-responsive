@@ -11,7 +11,7 @@ header {
 }
 
 .navbar {
-    background-color: #F1F1F1;
+    background-color: $white;
 }
 
 .navbar-nav {
@@ -21,7 +21,7 @@ header {
 }
 
 header nav ul li {
-    font-family: 'Jost';
+    font-family: $main-font;
     font-weight: 400;
     font-size: 1rem;
     justify-content: space-around;
@@ -35,7 +35,7 @@ header nav ul li a::after {
     display: block;
     height: 2px;
     width: 0%;
-    background-color: #3827FF;
+    background-color: $blue;
     bottom: -6px;
     transition: ease-in-out 250ms;
 }

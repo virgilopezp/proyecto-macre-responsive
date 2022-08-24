@@ -1,0 +1,93 @@
+// Highlight-Section
+.highlight-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 48px 0px 48px 0px;
+    gap: 48px;
+    background-color: $soft-grey;
+    width: 100vw;
+
+    &__group--left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__group--right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: 992px){
+            flex-flow: row-reverse;
+        }
+    }
+
+    &__title {
+        color: $blue;
+        text-align: center;
+    }
+
+    &__img {
+        height: 272px;
+        width: 100%;
+        object-fit: cover;
+        z-index: 1;
+        @media (min-width: 992px){
+            width: 80%;
+            max-width: 1010px;
+            border-radius: 16px;
+        }
+    }
+
+    &__card--left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 24px;
+        /* gap: 8px; */
+        border-radius: 8px;
+        background: $white;
+        z-index: 2;
+        min-width: 208px;
+        box-shadow: $shadow-2;
+        position: absolute;
+        margin-left: 16px;
+        margin-right: 16px;
+        @media (min-width: 992px) {
+            max-width: 308px;
+            left: 48px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+
+    &__card--right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 24px;
+        /* gap: 8px; */
+        border-radius: 8px;
+        background: $white;
+        z-index: 2;
+        min-width: 208px;
+        box-shadow: $shadow-2;
+        position: absolute;
+        margin-left: 16px;
+        margin-right: 16px;
+        @media (min-width: 992px) {
+            max-width: 308px;
+            right: 48px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        gap: 56px;
+        padding: 64px 0px 64px 0px;
+    }
+}

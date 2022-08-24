@@ -1,0 +1,9 @@
+// Mobile Hide
+.mobile-hide {
+    display: none;
+    height: 0px;
+    @media (min-width: 992px) {
+        display: flex;
+        height: auto;
+    }
+}

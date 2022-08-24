@@ -1,8 +1,18 @@
+// Hero
 .hero {
     justify-content: center;
     padding-top: 40px;
+    @media (min-width: 992px) { 
+        align-items: center;
+        margin: 0px 0px 80px 0px;
+    }
+
     &__container {
         gap: 24px;
+        @media (min-width: 992px) {  
+            z-index: 3;
+            position: relative;
+        }
     }
 
     &__container h2{
@@ -27,6 +37,10 @@
         background-image: url("../img/calefaccion-hero_background.png");
         background-size: cover;
         height: 352px;
+        @media (min-width: 992px) {  
+            height: auto;
+            background-image: none;
+        }
     }
 
     &__headline h1 {
@@ -37,12 +51,28 @@
         font-weight: 400;
         font-size: 2.625rem;
         line-height: 120%;
-        color: #F1F1F1;
+        color: $white;
         padding-top: 100px;
+        @media (min-width: 992px) {  
+            width: 520px;
+            font-size: 2.7rem;
+            line-height: 100%;
+            padding: 8px;
+            color: $black;
+        }
     }
 
     &__subheadline {
         padding: 0px 16px 0px 16px;
+        @media (min-width: 992px) {  
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 120%;
+            padding: 8px;
+            color: $black;
+        }
     }
 
     &__subheadline h2 {
@@ -51,11 +81,15 @@
         font-weight: 300;
         font-size: 24px;
         line-height: 120%;
-        color: #151515;
-    }
-    
+        color: $black;
+    }    
 }
 
+@media (min-width: 992px) {  
+    .hero__headline h1 span {
+        color: $white;
+    }
+}
 
 table {
     display: flex;

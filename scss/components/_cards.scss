@@ -1,0 +1,37 @@
+// Cards
+.servicios-card {
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 24px;
+    border-radius: 8px;
+    &__title {
+        color:$blue;
+    }
+}
+
+
+
+.productos-card {
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 24px;
+    box-shadow: $shadow-2;
+    border-radius: 8px;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    &__desc {
+        font-weight: 400;
+    }
+
+    &:hover{
+        box-shadow: $shadow-3;
+        transform: translateY(-2);
+        transform: scale(1.05);
+    }
+}
