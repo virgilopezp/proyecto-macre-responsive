@@ -8,11 +8,15 @@
 @import 'components/buttons';
 @import 'components/cards';
 
-@import "layout/header";
+@import 'pages/contacto';
+@import 'pages/productos';
+@import 'pages/projectos';
+@import 'pages/servicios';
+
+@import 'layout/header';
 @import 'layout/hero';
 @import 'layout/main-section';
 @import 'layout/highlight-section';
 @import 'layout/section-how';
-@import 'layout/form';
 @import 'layout/footer';
 @import 'layout/mobile-hide';
