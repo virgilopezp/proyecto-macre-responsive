@@ -101,7 +101,7 @@ footer {
         text-align: left;
         margin-bottom: 0;
     }
-    @media (min-width: 992px) {
+    @include desktop {
         justify-content: flex-end;
         align-items: center;
         padding-right: 32px;

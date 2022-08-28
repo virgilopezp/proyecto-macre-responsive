@@ -1,14 +1,11 @@
 // Main-Section
 .main-section__articles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include dflex (column, center, flex-end);
     gap: 40px;
-    align-items: flex-end;
     padding-left: 16px;
     padding-right: 16px;
     margin-top: 40px;
-    @media (min-width: 992px) {
+    @include desktop {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -19,16 +16,12 @@
 }
 
 .main-section {
-    display: flex;
-    flex-direction: column;
+    @include dflex (column, center, flex-start);
     gap: 40px;
-    justify-content: center;
-    align-items: flex-start;
 
     &__title {
         color: $blue;
         padding: 4px 16px;
-        // margin: 8px 0px 8px 0px;
         margin-top: 8px;
         margin-bottom: 8px;
         text-align: end;
@@ -41,7 +34,7 @@
         object-fit: cover;
     }
 
-    @media (min-width: 992px) {
+    @include desktop {
         display: flex;
         flex-direction: row;
         gap: 40px;

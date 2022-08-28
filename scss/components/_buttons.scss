@@ -94,13 +94,10 @@
         transform: translate(-2px);
         transform: scale(1.03);
     }
-    &a:hover {
-    color: $light-blue;
-    transform: translate(-2px);
-    transform: scale(1.03);
+    span{
+        padding-top: 2px;
     }
 }
-
 
 
 .icon-button {
@@ -150,4 +147,9 @@
         box-shadow: $shadow-2;
         transform: translateY(-4px);
     }
+}
+
+
+.navbar-toggler{
+    border: 0px;
 }

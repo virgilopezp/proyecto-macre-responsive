@@ -2,14 +2,14 @@
 .hero {
     justify-content: center;
     padding-top: 40px;
-    @media (min-width: 992px) { 
+    @include desktop { 
         align-items: center;
         margin-bottom: 80px;
     }
 
     &__container {
         gap: 24px;
-        @media (min-width: 992px) {  
+        @include desktop {  
             z-index: 3;
             position: relative;
         }
@@ -18,7 +18,7 @@
     &__container h2{
         margin-top: 24px;
         margin-bottom: 24px;
-        @media (min-width:992px) {
+        @include desktop {
             margin-top: 8px;
             margin-bottom: 16px;
         }
@@ -37,7 +37,7 @@
         background-image: url("../img/calefaccion-hero_background.png");
         background-size: cover;
         height: 352px;
-        @media (min-width: 992px) {  
+        @include desktop {  
             height: auto;
             background-image: none;
         }
@@ -46,14 +46,14 @@
     &__headline h1 {
         width: 245px;
         padding-left: 16px;
-        font-family: 'Bebas Neue';
+        font-family: $accent-font;
         font-style: normal;
         font-weight: 400;
         font-size: 2.625rem;
         line-height: 120%;
         color: $white;
         padding-top: 100px;
-        @media (min-width: 992px) {  
+        @include desktop {  
             width: 520px;
             font-size: 2.7rem;
             line-height: 100%;
@@ -64,8 +64,8 @@
 
     &__subheadline {
         padding: 0px 16px 0px 16px;
-        @media (min-width: 992px) {  
-            font-family: 'Jost';
+        @include desktop {  
+            font-family: $main-font;
             font-style: normal;
             font-weight: 300;
             font-size: 24px;
@@ -76,44 +76,42 @@
     }
 
     &__subheadline h2 {
-        font-family: 'Jost';
+        font-family: $main-font;
         font-style: normal;
         font-weight: 300;
         font-size: 24px;
         line-height: 120%;
         color: $black;
     }    
-}
 
-@media (min-width: 992px) {  
-    .hero__headline h1 span {
-        color: $white;
-    }
-}
-
-table {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    column-gap: 16px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-
-    tr th {
-        font-family: 'Bebas Neue';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 2.625rem;
-        padding: 8px 8px 4px 8px;
-        text-align: center;
+    @media (min-width: 992px) {  
+        .hero__headline h1 span {
+            color: $white;
+        }
     }
 
-    tr td {
-        font-family: 'Jost';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 0.75rem;
-        padding: 4px 8px 8px 8px;
-        text-align: center;
+    table {
+        @include dflex (column, center, flex-start);
+        column-gap: 16px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+
+        tr th {
+            font-family: $accent-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.625rem;
+            padding: 8px 8px 4px 8px;
+            text-align: center;
+        }
+
+        tr td {
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.75rem;
+            padding: 4px 8px 8px 8px;
+            text-align: center;
+        }
     }
 }

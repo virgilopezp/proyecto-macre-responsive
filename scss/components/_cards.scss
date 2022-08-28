@@ -1,9 +1,10 @@
 // Cards
 .servicios-card {
-    display: flex;
-    flex-direction: column;
-    background: $white;
-    align-items: flex-start;
+    @include dflex (column, center, flex-start);
+    font-family: $accent-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
     gap: 8px;
     padding: 24px;
     border-radius: 8px;
@@ -15,10 +16,8 @@
 
 
 .productos-card {
-    display: flex;
-    flex-direction: column;
+    @include dflex (column, center, flex-start);
     background: $white;
-    align-items: flex-start;
     gap: 8px;
     padding: 24px;
     box-shadow: $shadow-2;

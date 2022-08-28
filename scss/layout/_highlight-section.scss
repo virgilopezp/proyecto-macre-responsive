@@ -1,24 +1,17 @@
 // Highlight-Section
 .highlight-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include dflex (column, center, center);
     align-content: center;
     padding: 48px 0px 48px 0px;
     gap: 48px;
     background-color: $soft-grey;
 
     &__group--left {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include dflex (row, center, center);
     }
 
     &__group--right {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include dflex (row, center, center);
         @media (min-width: 992px){
             flex-flow: row-reverse;
         }
@@ -34,7 +27,7 @@
         width: 100%;
         object-fit: cover;
         z-index: 1;
-        @media (min-width: 992px){
+        @include desktop{
             width: 80%;
             max-width: 1010px;
             border-radius: 16px;
@@ -42,11 +35,8 @@
     }
 
     &__card--left{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        @include dflex (column, center, flex-start);
         padding: 16px 24px;
-        /* gap: 8px; */
         border-radius: 8px;
         background: $white;
         z-index: 2;
@@ -55,7 +45,7 @@
         position: absolute;
         margin-left: 16px;
         margin-right: 16px;
-        @media (min-width: 992px) {
+        @include desktop {
             max-width: 308px;
             left: 48px;
             margin-left: 0px;
@@ -64,9 +54,7 @@
     }
 
     &__card--right {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        @include dflex (column, center, flex-start);
         padding: 16px 24px;
         border-radius: 8px;
         background: $white;
@@ -76,7 +64,7 @@
         position: absolute;
         margin-left: 16px;
         margin-right: 16px;
-        @media (min-width: 992px) {
+        @include desktop {
             max-width: 308px;
             right: 48px;
             margin-left: 0px;
@@ -88,4 +76,11 @@
         gap: 56px;
         padding: 64px 0px 64px 0px;
     }
+}
+
+.highlight-card__title{
+    font-family: $accent-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75rem;
 }

@@ -1,10 +1,7 @@
 // Section-How
 .section-how {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include dflex (column, center, center);
     gap: 2rem;
-    align-items: center;
 
     &__title {
         display: flex;
@@ -24,7 +21,7 @@
         text-align: center;
     }
 
-    @media (min-width: 992px){
+    @include desktop{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
