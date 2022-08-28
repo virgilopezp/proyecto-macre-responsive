@@ -23,8 +23,8 @@
         justify-content: center;
         gap: 16px;
         &__input {
-            background: #EBEBEB;
-            border: 1px solid #3827FF;
+            background: $soft-grey;
+            border: 1px solid $blue;
             border-radius: 4px;
             width: 318px;
             height: 48px;
@@ -33,8 +33,8 @@
             }
         }
         &__textarea {
-            background: #EBEBEB;
-            border: 1px solid #3827FF;
+            background: $soft-grey;
+            border: 1px solid $blue;
             border-radius: 4px;
             width: 318px;
             @media (min-width: 992px) {
