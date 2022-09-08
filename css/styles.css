@@ -68,13 +68,15 @@ p {
 .highlighted_text {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
   padding-top: 40px;
 }
 @media (min-width: 992px) {
   .highlighted_text {
     padding-top: 0px;
   }
+}
+.highlighted_text p {
+  font-size: 1.2rem;
 }
 
 .articles-title {
@@ -94,7 +96,7 @@ p {
   border: none;
   justify-content: center;
   align-items: center;
-  padding: 5px 24px;
+  padding: 5px 16px;
   margin: 8px;
   box-shadow: 0px 2px 4px -2px rgba(24, 39, 75, 0.12), 0px 4px 4px -2px rgba(24, 39, 75, 0.08);
   font-family: "Jost", sans-serif;
@@ -123,7 +125,7 @@ p {
   background-color: #F1F1F1;
   justify-content: center;
   align-items: center;
-  padding: 5px 24px;
+  padding: 5px 16px;
   margin: 8px;
   box-shadow: 0px 2px 4px -2px rgba(24, 39, 75, 0.12), 0px 4px 4px -2px rgba(24, 39, 75, 0.08);
   font-family: "Jost", sans-serif;
@@ -345,7 +347,6 @@ p {
 .servicios {
   display: grid;
   flex-direction: column;
-  /* grid-template-columns: repeat(4, 1fr); */
   column-gap: 20px;
   row-gap: 32px;
 }
@@ -448,13 +449,13 @@ header nav ul li a:hover::after {
   }
 }
 .hero__container h2 {
-  margin-top: 24px;
+  margin-top: 16px;
   margin-bottom: 24px;
 }
 @media (min-width: 992px) {
   .hero__container h2 {
     margin-top: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 0px;
   }
 }
 .hero__img {
@@ -477,22 +478,17 @@ header nav ul li a:hover::after {
   }
 }
 .hero__headline h1 {
-  width: 245px;
   padding-left: 16px;
   font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2.625rem;
-  line-height: 120%;
+  font-size: 2.7rem;
   color: #F1F1F1;
-  padding-top: 100px;
+  padding-top: 150px;
 }
 @media (min-width: 992px) {
   .hero__headline h1 {
-    width: 520px;
-    font-size: 2.7rem;
-    line-height: 100%;
-    padding: 8px;
+    padding: 0px 16px 0px 8px;
     color: #151515;
   }
 }
@@ -504,9 +500,8 @@ header nav ul li a:hover::after {
     font-family: "Jost", sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
-    line-height: 120%;
-    padding: 8px;
+    font-size: 1.25rem;
+    padding: 0px 16px 0px 8px;
     color: #151515;
   }
 }
@@ -514,13 +509,13 @@ header nav ul li a:hover::after {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 24px;
-  line-height: 120%;
+  font-size: 1rem;
   color: #151515;
 }
 @media (min-width: 992px) {
-  .hero .hero__headline h1 span {
-    color: #F1F1F1;
+  .hero__subheadline h2 {
+    line-height: 100%;
+    color: #151515;
   }
 }
 .hero table {
@@ -528,24 +523,28 @@ header nav ul li a:hover::after {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  column-gap: 16px;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin: 16px 8px;
+}
+@media (min-width: 992px) {
+  .hero table {
+    margin: 48px 0px 48px 0px;
+  }
 }
 .hero table tr th {
   font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2.625rem;
-  padding: 8px 8px 4px 8px;
+  font-size: 1.75rem;
+  line-height: 80%;
+  padding: 8px 8px 0px 8px;
   text-align: center;
 }
 .hero table tr td {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 0.75rem;
-  padding: 4px 8px 8px 8px;
+  font-size: 0.7rem;
+  padding: 0px 8px 8px 8px;
   text-align: center;
 }
 
@@ -717,9 +716,7 @@ header nav ul li a:hover::after {
 .section-how {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  gap: 40px;
 }
 .section-how__title {
   display: flex;
@@ -741,7 +738,7 @@ header nav ul li a:hover::after {
   .section-how {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    gap: 0px;
   }
 }
 
