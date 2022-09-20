@@ -22,27 +22,41 @@
         flex-direction: column;
         justify-content: center;
         gap: 16px;
+        margin-top: 40px;
         &__input {
-            background: $soft-grey;
-            border: 1px solid $blue;
+            background-color: $soft-grey;
+            border: 1.25px solid $blue;
             border-radius: 4px;
             width: 318px;
             height: 48px;
+            padding-left: 8px;
+            padding-right: 8px;
+            font-family: $main-font;
             @media (min-width: 992px) {
                 width: 100%;
+            }
+            &:focus{
+                border: 2px solid $blue;
+                background-color: $white;
             }
         }
         &__textarea {
             background: $soft-grey;
-            border: 1px solid $blue;
+            border: 1.25px solid $blue;
             border-radius: 4px;
             width: 318px;
+            padding: 8px;
+            font-family: $main-font;
             @media (min-width: 992px) {
                 width: 100%;
             }
+            &:focus{
+                border: 2px solid $blue;
+                background-color: $white;
+            }
         }
         &__label {
-            font-family: 'Jost';
+            font-family: $main-font;
             font-style: normal;
             font-weight: 500;
             font-size: 0.875rem;

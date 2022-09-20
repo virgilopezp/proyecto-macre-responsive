@@ -3,6 +3,8 @@
     flex-direction: column;
     column-gap: 20px;
     row-gap: 32px;
+    padding-left: 36px;
+    padding-right: 36px;
     @media (min-width: 992px){
         display: grid;
         grid-template-columns: repeat(4, 1fr);
