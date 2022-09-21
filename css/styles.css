@@ -25,7 +25,11 @@ main {
 .button-row {
   display: flex;
   align-items: center;
-  margin-top: 24px;
+}
+@media (min-width: 992px) {
+  .button-row {
+    margin-top: 24px;
+  }
 }
 
 h3 {
@@ -179,6 +183,9 @@ p {
 .button__ghost span {
   padding-top: 2px;
 }
+.button__ghost a:hover {
+  color: #00A9FF;
+}
 
 .icon-button {
   background-color: #3827FF;
@@ -230,7 +237,7 @@ p {
 .servicios-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   font-family: "Bebas Neue", sans-serif;
   font-style: normal;
@@ -309,8 +316,7 @@ p {
   }
 }
 .contacto__form__input:focus {
-  border: 2px solid #3827FF;
-  background-color: #F1F1F1;
+  background-color: #F4F4F4;
 }
 .contacto__form__textarea {
   background: #E6E6E6;
@@ -326,8 +332,7 @@ p {
   }
 }
 .contacto__form__textarea:focus {
-  border: 2px solid #3827FF;
-  background-color: #F1F1F1;
+  background-color: #F4F4F4;
 }
 .contacto__form__label {
   font-family: "Jost", sans-serif;

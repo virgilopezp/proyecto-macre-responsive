@@ -36,8 +36,7 @@
                 width: 100%;
             }
             &:focus{
-                border: 2px solid $blue;
-                background-color: $white;
+                background-color: #F4F4F4;
             }
         }
         &__textarea {
@@ -51,8 +50,7 @@
                 width: 100%;
             }
             &:focus{
-                border: 2px solid $blue;
-                background-color: $white;
+                background-color: #F4F4F4;
             }
         }
         &__label {

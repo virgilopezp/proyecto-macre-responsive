@@ -1,6 +1,6 @@
 // Cards
 .servicios-card {
-    @include dflex (column, center, flex-start);
+    @include dflex (column, flex-start, flex-start);
     font-family: $accent-font;
     font-style: normal;
     font-weight: 400;
